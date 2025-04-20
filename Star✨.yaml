@@ -19,9 +19,14 @@ proxies:
     name: 韩国
     password: "amazonskr05"
     port: 80
-    server: 52.79.248.173
+    server: 43.203.180.47
     type: ss
-
+  - cipher: aes-256-gcm
+    name: 日本
+    password: "amazonskr05"
+    port: 80
+    server: 18.183.132.234
+    type: ss
 proxy-groups:
   # 分流分组
   - {name: 手动切换, icon: 'https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/%24tash.png', type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
