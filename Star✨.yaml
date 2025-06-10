@@ -75,6 +75,7 @@ rule-providers:
   # 代理网站
   ProxyGFW: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/ProxyGFW.list'}
 rules:
+  - DOMAIN,ghfast.top,DIRECT # 订阅更新
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Github,微软服务
