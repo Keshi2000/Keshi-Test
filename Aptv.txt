@@ -1,4 +1,4 @@
 Keshi,#genre#
 看不了就刷新订阅,https://cfss.cc/api/kg/596344.mp4
 NBA,#genre#
-纬来体育,https://v4-f407fc41c3b4e6dcca494d483fd66892.livehwc4.com/hls.yjjcfw.com/live/vl_3.ts?vhost=hls.yjjcfw.com&edge_slice=true
+纬来体育,https://v4-a099eb085f026244f584a4ff0c521557.livehwc4.com/hls.yjjcfw.com/live/vl.m3u8?sub_m3u8=true&hwSecret=6fe8a92606a9ae3477db45e30463db9ede12c17ab7b813bdf3ea0955ab99df2f&user_session_id=ff76e3305412acb7d2fc70c3c622d977&edge_slice=true&hwTime=684BB20A
