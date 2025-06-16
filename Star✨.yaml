@@ -21,7 +21,6 @@ proxy-groups:
   - {name: 国外网站, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - name: 广告拦截
     proxies:
-      - DIRECT
       - REJECT
     type: select
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
@@ -85,13 +84,13 @@ rule-providers:
   TikTok: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/TikTok.list'}
   # 代理网站
   ProxyGFW: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/ProxyGFW.list'}
-  广告拦截:
-    behavior: "classical"
+  AD:
+    behavior: "domain"
     interval: 86400
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-QuantumultX.list
     format: text
 rules:
-  - RULE-SET,广告拦截,广告拦截
+  - RULE-SET,AD,广告拦截
   - DOMAIN,ghfast.top,DIRECT # 订阅更新
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
