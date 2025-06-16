@@ -4,9 +4,9 @@ dns:
   # 默认的域名解析服务器
   nameserver: [223.5.5.5, 119.29.29.29]
   # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
-  fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn']
+  fake-ip-filter: [+.lan, '*', +.local, +.cmpassport.com, id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, +.10099.com.cn]
 # > 订阅信息展示
-subscribe-url:
+subscribe-url: null
 # > 在此处添加节点信息
 proxies:
   - cipher: aes-256-gcm
@@ -15,12 +15,18 @@ proxies:
     port: 55973
     server: 146.190.157.232
     type: ss
-  
-  
 proxy-groups:
   # 分流分组
   - {name: 手动切换, icon: 'https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/%24tash.png', type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
   - {name: 国外网站, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+    include-all: null
+    name: 苹果服务
+    proxies:
+      - 手动切换
+      - DIRECT
+    type: select
+  - {name: Emby, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png', type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - {name: 国际媒体, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - {name: 微软服务, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - {name: 谷歌服务, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
@@ -28,7 +34,6 @@ proxy-groups:
   - {name: 推特消息, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - {name: AI, icon: 'https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - {name: 游戏平台, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
-  - {name: Emby, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png', type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - {name: Spotify, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
   - {name: 兜底分流, icon: 'https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/friestash.png', type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
   # 节点地区分流
