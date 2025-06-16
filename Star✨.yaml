@@ -91,6 +91,7 @@ rule-providers:
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-QuantumultX.list
     format: text
 rules:
+  - RULE-SET,广告拦截,广告拦截
   - DOMAIN,ghfast.top,DIRECT # 订阅更新
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
