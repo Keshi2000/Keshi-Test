@@ -15,6 +15,22 @@ proxies:
     port: 58841
     server: 146.190.157.232
     type: ss
+  - cipher: rc4-md5
+    name: 香港
+    password: Paofu
+    plugin: obfs
+    plugin-opts:
+      headers: {}
+      host: 412b9308255.microsoft.com
+      mode: http
+      password: ""
+      path: ""
+      skip-cert-verify: false
+      tls: false
+      version: 0
+    port: 5981
+    server: yd-04.paofunlink.com
+    type: ss
 proxy-groups:
   # 分流分组
   - {name: 手动切换, icon: 'https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/%24tash.png', type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
