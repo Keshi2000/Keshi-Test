@@ -44,7 +44,7 @@ proxies:
       skip-cert-verify: false
       tls: false
       version: 0
-    port: 1183
+    port: 1172
     server: yd-05.paofunlink.com
     type: ss
 proxy-groups:
