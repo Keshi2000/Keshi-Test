@@ -11,8 +11,8 @@ subscribe-url: null
 proxies:
   - cipher: aes-256-gcm
     name: 美国
-    password: "38179144"
-    port: 34491
+    password: "01968275"
+    port: 49833
     server: 146.190.157.232
     type: ss
   - cipher: 2022-blake3-aes-128-gcm
