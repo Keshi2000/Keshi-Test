@@ -11,8 +11,8 @@ subscribe-url: null
 proxies:
   - cipher: aes-256-gcm
     name: 美国
-    password: "12614205"
-    port: 48512
+    password: "22372917"
+    port: 20430
     server: 146.190.157.232
     type: ss
 proxy-groups:
