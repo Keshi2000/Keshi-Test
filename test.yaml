@@ -1,6 +1,18 @@
- - cipher: aes-256-gcm
-    name: 美国
-    password: "79571422"
-    port: 31868
-    server: 146.190.157.232
-    type: ss
+{
+  "method" : "aes-256-gcm",
+  "udp" : 1,
+  "uuid" : "12737c20-678b-ca21-728e-30739f13f7e6",
+  "chain" : "",
+  "updated" : 1757074792.593142,
+  "weight" : 1757074791,
+  "type" : "Shadowsocks",
+  "host" : "146.190.157.232",
+  "title" : "美国",
+  "password" : "79571422",
+  "data" : "https:\/\/github.com\/Keshi2000\/Keshi-Test\/blob\/main\/Star%E2%9C%A8.yaml",
+  "flag" : "US",
+  "obfs" : "none",
+  "cert" : "",
+  "created" : 0,
+  "port" : "31868"
+}
