@@ -362,11 +362,6 @@ rules:
     policy: Twitter
     disabled: false
 - rule_set:
-    name: Emby
-    match: https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/E.yaml
-    policy: Emby
-    disabled: false
-- rule_set:
     name: YouTube
     match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/YouTube.yaml
     policy: YouTube
