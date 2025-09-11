@@ -209,7 +209,7 @@ policy_groups:
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
     hidden: false
 - select:
-    name: Lily
+    name: Lily Emby
     policies:
     - 香港节点
     - 台湾节点
@@ -326,7 +326,7 @@ rules:
 - domain:
     name: Lily
     match: cdn.lilyemby.my
-    policy: Lily
+    policy: Lily Emby
     disabled: false
 - rule_set:
     name: Emby
