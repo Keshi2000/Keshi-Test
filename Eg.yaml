@@ -213,6 +213,19 @@ policy_groups:
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
     hidden: false
 - select:
+    name: Lily
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/wyaing/Forward/refs/heads/main/Emby%20icon/round%20icon/Lily.avif
+    hidden: false
+- select:
     name: Twitter
     policies:
     - 美国节点
@@ -314,6 +327,11 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/US.png
     hidden: false
 rules:
+- domain:
+    name: Lily
+    match: cdn.lilyemby.my
+    policy: Lily
+    disabled: false
 - rule_set:
     name: Emby
     match: Emby
