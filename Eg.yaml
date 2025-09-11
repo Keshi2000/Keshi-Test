@@ -24,10 +24,6 @@ policy_groups:
 - external:
     name: 手动选择
     type: select
-    urls:
-    - https://subyellow.bigbigwatermelon.com/s/a35256794cd71a50808d68f99cee0c8a
-    - https://edgeonecdn.gzcloud.shop/api/v1/client/subscribe?token=b922605ee1333558564013426d9624c1
-    - https://substore.sntp.cc/sub?target=surge&ver=3&url=https%3A%2F%2Fghfast.top%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FKeshi2000%2FKeshi-Test%2Fmain%2FStar%25E2%259C%25A8.yaml&insert=false
     filter: ^
     update_interval: 86400
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Sensei.png
