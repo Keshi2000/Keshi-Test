@@ -29,34 +29,6 @@ policy_groups:
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Sensei.png
     hidden: false
 - select:
-    name: 兜底策略
-    policies:
-    - 手动选择
-    - 自动选择
-    - DIRECT
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    flatten: false
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Final.png
-    hidden: false
-- select:
-    name: Telegram
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/Telegram.png
-    hidden: false
-- select:
     name: AI
     policies:
     - 美国节点
@@ -85,7 +57,7 @@ policy_groups:
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Emby.png
     hidden: false
 - select:
-    name: Wechat
+    name: Tiktok
     policies:
     - 香港节点
     - 台湾节点
@@ -95,7 +67,33 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/wechat.png
+    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/TikTok.png
+    hidden: false
+- select:
+    name: Github
+    policies:
+    - 美国节点
+    - 狮城节点
+    - 韩国节点
+    - 日本节点
+    - 台湾节点
+    - 香港节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/github_00.png
+    hidden: false
+- select:
+    name: Twitter
+    policies:
+    - 美国节点
+    - 狮城节点
+    - 韩国节点
+    - 日本节点
+    - 台湾节点
+    - 香港节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/Twitter.png
     hidden: false
 - select:
     name: Spotify
@@ -110,20 +108,20 @@ policy_groups:
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Spotify.png
     hidden: false
 - select:
-    name: Github
+    name: Wechat
     policies:
-    - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
     - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/github_08.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/wechat.png
     hidden: false
 - select:
-    name: Tiktok
+    name: YouTube
     policies:
     - 香港节点
     - 台湾节点
@@ -133,7 +131,54 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/TikTok.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/youtube.png
+    hidden: false
+- select:
+    name: Telegram
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/Telegram.png
+    hidden: false
+- select:
+    name: Microsoft
+    policies:
+    - DIRECT
+    - 美国节点
+    - 狮城节点
+    - 韩国节点
+    - 日本节点
+    - 台湾节点
+    - 香港节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Microsoft.png
+    hidden: false
+- select:
+    name: Lily Emby
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/wyaing/Forward/refs/heads/main/Emby%20icon/round%20icon/Lily.avif
+    hidden: false
+- select:
+    name: Speed Test
+    policies:
+    - DIRECT
+    - 手动选择
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Speedtest.png
     hidden: false
 - select:
     name: 苹果服务
@@ -149,19 +194,6 @@ policy_groups:
     - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Apple-2.png
-    hidden: false
-- select:
-    name: YouTube
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/youtube.png
     hidden: false
 - select:
     name: 国内媒体
@@ -209,32 +241,6 @@ policy_groups:
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
     hidden: false
 - select:
-    name: Lily Emby
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/wyaing/Forward/refs/heads/main/Emby%20icon/round%20icon/Lily.avif
-    hidden: false
-- select:
-    name: Twitter
-    policies:
-    - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
-    - 香港节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/Twitter.png
-    hidden: false
-- select:
     name: 全球加速
     policies:
     - 手动选择
@@ -259,6 +265,21 @@ policy_groups:
     timeout: 5
     icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Available.png
     hidden: false
+- select:
+    name: 兜底策略
+    policies:
+    - 手动选择
+    - 自动选择
+    - DIRECT
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Final.png
+    hidden: false
 - auto_test:
     name: 香港节点
     policies:
@@ -279,7 +300,7 @@ policy_groups:
     interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/TW.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/taiwan(2).png
     hidden: false
 - auto_test:
     name: 日本节点
@@ -290,7 +311,7 @@ policy_groups:
     interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/JP.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/Japan.png
     hidden: false
 - auto_test:
     name: 韩国节点
@@ -312,7 +333,7 @@ policy_groups:
     interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/SG.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/singapore(1).png
     hidden: false
 - select:
     name: 美国节点
@@ -323,6 +344,11 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/US.png
     hidden: false
 rules:
+- rule_set:
+    name: Microsoft
+    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Microsoft.yaml
+    policy: Microsoft
+    disabled: false
 - domain:
     name: Lily
     match: cdn.lilyemby.my
@@ -356,6 +382,10 @@ rules:
     name: Twitter
     match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/Twitter.yaml
     policy: Twitter
+    disabled: false
+- rule_set:
+    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Speedtest.yaml
+    policy: DIRECT
     disabled: false
 - rule_set:
     name: YouTube
