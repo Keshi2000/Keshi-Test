@@ -149,13 +149,13 @@ policy_groups:
 - select:
     name: Microsoft
     policies:
-    - DIRECT
-    - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
     - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Microsoft.png
     hidden: false
