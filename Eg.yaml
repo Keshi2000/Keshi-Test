@@ -24,8 +24,7 @@ policy_groups:
     name: 手动选择
     type: select
     urls:
-    - https://dingyuelail.xueshan.shop/api/xueshan/4fefb69ed39bda64a81cda9dda6e7339
-    - https://substore.sntp.cc/sub?target=surge&ver=3&url=https%3A%2F%2Fghfast.top%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FKeshi2000%2FKeshi-Test%2Fmain%2FStar%25E2%259C%25A8.yaml&insert=false
+    - 此处添加订阅
     filter: ^
     update_interval: 28800
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bypass.png
