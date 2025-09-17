@@ -1,7 +1,7 @@
 # 规则名称: Gemini
 # 规则统计: 14
 
-domain_suffix_set:
+domain_set:
    - ai.google.dev
    - aida.googleapis.com
    - aistudio.google.com
