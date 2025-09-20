@@ -1,10 +1,12 @@
-{
+[
+  {
     "type": "ss",
     "server": "146.190.157.232",
-    "cipher": "aes-256-gcm",
     "port": 34201,
+    "cipher": "aes-256-gcm",
     "password": "45627734",
-    "name": "美国·水之城",
+    "name": "美国",
     "_subName": "1",
     "_subDisplayName": "心心订阅"
   }
+]
