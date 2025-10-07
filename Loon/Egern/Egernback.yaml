@@ -301,7 +301,7 @@ rules:
     disabled: false
 - rule_set:
     name: Emby
-    match: Emby
+    match: https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Loon/Egern/Ey.yaml
     policy: Emby
     disabled: false
 - rule_set:
