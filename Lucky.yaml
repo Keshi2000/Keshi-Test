@@ -1,8 +1,0 @@
-# > 在此处添加节点信息
-proxies:
-  - cipher: aes-256-gcm
-    name: 美国
-    password: "45627734"
-    port: 34201
-    server: 146.190.157.232
-    type: ss
