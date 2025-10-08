@@ -1,4 +1,3 @@
-#新增德国节点解析
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -21,6 +20,20 @@ dns:
       value: SecureDNS
   public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
+- auto_test:
+    name: 兜底策略
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 德国节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Loon.png
+    hidden: false
 - external:
     name: 手动选择
     type: select
@@ -28,252 +41,161 @@ policy_groups:
     - 此处添加订阅
     filter: ^
     update_interval: 28800
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bypass.png
-    hidden: false
-- select:
-    name: AI
-    policies:
-    - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
-    - 香港节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT3.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/shin-chan/Shin-chan-1015.png
     hidden: false
 - select:
     name: Emby
     policies:
-    - 手动选择
-    - 自动选择
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
     - 德国节点
     - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
-    - 香港节点
     - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
     hidden: false
 - select:
-    name: Tiktok
+    name: 大陆服务
     policies:
     - 香港节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
+    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/TikTok.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/CN_02.png
     hidden: false
 - select:
-    name: Github
-    policies:
-    - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
-    - 香港节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png
-    hidden: false
-- select:
-    name: Twitter
-    policies:
-    - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
-    - 香港节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/Twitter.png
-    hidden: false
-- select:
-    name: Gemini
+    name: 电报消息
     policies:
     - 香港节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png
-    hidden: false
-- select:
-    name: Spotify
-    policies:
-    - 狮城节点
-    - 日本节点
-    - 韩国节点
-    - 台湾节点
-    - 香港节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/spotify(green).png
-    hidden: false
-- select:
-    name: Wechat
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
-    hidden: false
-- select:
-    name: YouTube
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/youtube.png
-    hidden: false
-- select:
-    name: Telegram
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
+    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     hidden: false
 - select:
-    name: Microsoft
+    name: 微信服务
     policies:
-    - DIRECT
-    - 美国节点
-    - 狮城节点
-    - 韩国节点
-    - 日本节点
-    - 台湾节点
     - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 德国节点
+    - 美国节点
+    - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
+    hidden: false
+- select:
+    name: 微博服务
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 德国节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png
+    hidden: false
+- select:
+    name: 大陆抖音
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 德国节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_1.png
+    hidden: false
+- select:
+    name: 海外抖音
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 德国节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+    hidden: false
+- select:
+    name: 人工智能
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 德国节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT3.png
     hidden: false
 - select:
     name: 苹果服务
     policies:
-    - 手动选择
-    - 自动选择
     - 香港节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
+    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
     hidden: false
 - select:
-    name: 国内媒体
+    name: 谷歌服务
     policies:
-    - 手动选择
-    - 自动选择
     - 香港节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
+    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/txvideo.png
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
     hidden: false
 - select:
-    name: 国际媒体
+    name: 油管视频
     policies:
-    - 手动选择
-    - 自动选择
     - 香港节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
+    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
-    hidden: false
-- select:
-    name: 港台番剧
-    policies:
-    - 手动选择
-    - 自动选择
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bahamut.png
-    hidden: false
-- select:
-    name: 全球加速
-    policies:
-    - 手动选择
-    - 自动选择
-    - DIRECT
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Global.png
-    hidden: false
-- auto_test:
-    name: 自动选择
-    policies:
-    - 手动选择
-    flatten: true
-    filter: ^
-    interval: 1800
-    tolerance: 50
-    timeout: 5
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
-    hidden: false
-- select:
-    name: 兜底策略
-    policies:
-    - 手动选择
-    - 自动选择
-    - DIRECT
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    flatten: false
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Final.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/youtube.png
     hidden: false
 - auto_test:
     name: 香港节点
@@ -319,14 +241,6 @@ policy_groups:
     timeout: 5
     icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/KR.png
     hidden: false
-- select:
-    name: 德国节点
-    policies:
-    - 手动选择
-    flatten: true
-    filter: 德国|德|GE|🇩🇪|(?i)Germany
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
-    hidden: false
 - auto_test:
     name: 狮城节点
     policies:
@@ -338,6 +252,14 @@ policy_groups:
     timeout: 5
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/singapore(1).png
     hidden: false
+- auto_test:
+    name: 德国节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: 德国|德|GE|🇩🇪|(?i)Germany
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
+    hidden: false
 - select:
     name: 美国节点
     policies:
@@ -346,31 +268,87 @@ policy_groups:
     filter: 美国|美|US|🇺🇸|(?i)States
     icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/US.png
     hidden: false
+- select:
+    name: 全球加速
+    policies:
+    - 手动选择
+    - 自动选择
+    - DIRECT
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Global.png
+    hidden: true
+- auto_test:
+    name: 自动选择
+    policies:
+    - 手动选择
+    flatten: true
+    filter: ^
+    interval: 1800
+    tolerance: 50
+    timeout: 5
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
+    hidden: true
 rules:
-- domain:
-    name: '1111'
-    match: cflocal.xxlb.net
-    policy: Emby
+- rule_set:
+    name: 谷歌服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/GoogleCN.yaml
+    policy: 谷歌服务
     disabled: false
-- domain:
-    name: saodu直连
-    match: saodu.asia
-    policy: DIRECT
+- rule_set:
+    name: 谷歌服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Google.yaml
+    policy: 谷歌服务
+    disabled: false
+- rule_set:
+    name: 微博服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/WeiBo.yaml
+    policy: 微博服务
+    disabled: false
+- rule_set:
+    name: 大陆服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaMedia.yaml
+    policy: 大陆服务
+    disabled: false
+- rule_set:
+    name: 大陆服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaMax.yaml
+    policy: 大陆服务
+    disabled: false
+- rule_set:
+    name: 大陆服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPv6.yaml
+    policy: 大陆服务
+    disabled: false
+- rule_set:
+    name: 大陆服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPv4.yaml
+    policy: 大陆服务
+    disabled: false
+- rule_set:
+    name: 大陆服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPMax.yaml
+    policy: 大陆服务
+    disabled: false
+- rule_set:
+    name: 大陆服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPBGP.yaml
+    policy: 大陆服务
+    disabled: false
+- rule_set:
+    name: 大陆服务
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaASN.yaml
+    policy: 大陆服务
     disabled: false
 - domain_suffix:
     name: Gemini
     match: googleapis.com
-    policy: Gemini
-    disabled: false
-- domain:
-    name: 雪山订阅
-    match: dingyuelail.xueshan.shop
-    policy: 手动选择
-    disabled: false
-- rule_set:
-    name: Microsoft
-    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Microsoft.yaml
-    policy: Microsoft
+    policy: 谷歌服务
     disabled: false
 - domain:
     name: Lily直连
@@ -379,42 +357,28 @@ rules:
     disabled: false
 - rule_set:
     name: Emby
-    match: Emby
+    match: https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Loon/Egern/Ey.yaml
     policy: Emby
     disabled: false
 - rule_set:
     name: AI
     match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/OpenAI.yaml
-    policy: AI
-    disabled: false
-- rule_set:
-    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/GitHub.yaml
-    policy: Github
+    policy: 人工智能
     disabled: false
 - rule_set:
     name: TikTok
     match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/TikTok.yaml
-    policy: Tiktok
+    policy: 海外抖音
     disabled: false
 - rule_set:
     name: Wechat
     match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/WeChat.yaml
-    policy: Wechat
-    disabled: false
-- rule_set:
-    name: Twitter
-    match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/Twitter.yaml
-    policy: Twitter
+    policy: 微信服务
     disabled: false
 - rule_set:
     name: YouTube
     match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/YouTube.yaml
-    policy: YouTube
-    disabled: false
-- rule_set:
-    name: Spotify
-    match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/Spotify.yaml
-    policy: Spotify
+    policy: 油管视频
     disabled: false
 - rule_set:
     name: 规则修正
@@ -431,25 +395,7 @@ rules:
 - rule_set:
     name: Telegram
     match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Telegram.yaml
-    policy: Telegram
-    update_interval: 86400
-    disabled: false
-- rule_set:
-    name: 港台番剧
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/HMTMedia.yaml
-    policy: 港台番剧
-    update_interval: 86400
-    disabled: false
-- rule_set:
-    name: 国内媒体
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/ChinaMedia.yaml
-    policy: 国内媒体
-    update_interval: 86400
-    disabled: false
-- rule_set:
-    name: 国际媒体
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/GlobalMedia.yaml
-    policy: 国际媒体
+    policy: 电报消息
     update_interval: 86400
     disabled: false
 - rule_set:
