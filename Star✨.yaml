@@ -1,3 +1,4 @@
+#SUBSCRIBED https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Star%E2%9C%A8.yaml
 #自用配置
 #更新时间：2025.10.10
 #Author：K
@@ -264,4 +265,4 @@ rules:
   - RULE-SET,Reject,REJECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底策略
-proxy-providers: {添加订阅: {benchmark-timeout: 5, benchmark-url: 'http://1.1.1.1/generate_204', interval: 86400, url: "https://sufo.xueshan.shop/api/xueshan/4fefb69ed39bda64a81cda9dda6e7339"}}
+proxy-providers: {添加订阅: {benchmark-timeout: 5, benchmark-url: 'http://1.1.1.1/generate_204', interval: 21600, url: "此处添加你的订阅链接"}}
