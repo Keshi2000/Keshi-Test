@@ -94,6 +94,17 @@ proxy-groups:
       - 美国节点
       - DIRECT
     type: select
+  - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/quanqiu(3).png
+    name: 国外网站
+    proxies:
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 韩国节点
+      - 狮城节点
+      - 美国节点
+      - DIRECT
+    type: select
   - {name: 谷歌服务, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   # 节点地区分流
   - {name: 香港节点, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png', type: url-test, interval: 300, include-all: true, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)"}
@@ -125,8 +136,6 @@ rule-providers:
   Emby: {behavior: classical, format: yaml, interval: 86400, url: 'https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Loon/Ruleset/One/Stash%20Ey.yaml'}
   HBO: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/HBO.list'}
   TikTok: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/TikTok.list'}
-  # 代理网站
-  ProxyGFW: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/ProxyGFW.list'}
   AD:
     behavior: "domain"
     interval: 86400
@@ -135,9 +144,9 @@ rule-providers:
   微信服务:
     behavior: classical
     interval: 86400
-    url: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Stash/Ruleset/WeChat.yaml
-    format: yaml
-  通讯服务:
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/WeChat.list
+    format: text
+  腾讯服务:
     behavior: classical
     format: text
     interval: 86400
@@ -172,27 +181,93 @@ rule-providers:
     format: yaml
     interval: 86400
     url: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Stash/Ruleset/ChinaMax.yaml
+  App Store:
+    behavior: classical
+    format: text
+    interval: 0
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/AppStore.list
+  Apple CN:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/AppleCN.list
+  Apple ID:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/AppleID.list
+  Apple servers:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/AppleServers.list
+  China ASN:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/ChinaASN.list
+  'ChinaDomin ':
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/ChinaDomain.list
+  China IP:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/ChinaIP.list
+  苹果Test:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/TestFlight.list
+  iCloud:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/iCloud.list
+  ProxyGFW:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/ProxyGFW.list
+  Emby X:
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/Emby.list
 rules:
-  - RULE-SET,大陆服务ipv4,大陆服务 # 大陆
+  - DOMAIN,cdn.lilyemby.my,大陆服务 # Lily
+  - RULE-SET,ProxyGFW,国外网站 # GFW
+  - RULE-SET,腾讯服务,微信服务 # 腾讯
+  - RULE-SET,iCloud,苹果服务 # iCloud
+  - RULE-SET,苹果Test,苹果服务 # Testflight
+  - RULE-SET,China IP,大陆服务 # China IP
   - RULE-SET,大陆服务,大陆服务 # 大陆
   - RULE-SET,大陆服务Max,大陆服务 # 大陆
-  - RULE-SET,人工智能,人工智能
-  - RULE-SET,TikTok,海外抖音 # 海外抖音
-  - RULE-SET,大陆抖音,大陆抖音 # 大陆抖音
-  - RULE-SET,微博服务,微博服务 # 微博服务
-  - RULE-SET,微信服务,微信服务 # 维修服务
-  - DOMAIN,ghfast.top,DIRECT # 订阅更新
-  - RULE-SET,Reject,REJECT
+  - RULE-SET,大陆服务ipv4,大陆服务 # 大陆
+  - RULE-SET,China ASN,大陆服务 # China ASN
+  - RULE-SET,Apple servers,苹果服务 # 苹果服务
+  - RULE-SET,AppleProxy,苹果服务 # 苹果
+  - RULE-SET,Apple CN,苹果服务 # 苹果CN
+  - RULE-SET,App Store,苹果服务 # 苹果商店
+  - RULE-SET,Apple ID,苹果服务 # 苹果id
+  - RULE-SET,Apple,苹果服务
   - RULE-SET,AI,人工智能
+  - RULE-SET,人工智能,人工智能
+  - RULE-SET,大陆抖音,大陆抖音 # 大陆抖音
+  - RULE-SET,TikTok,海外抖音 # 海外抖音
+  - RULE-SET,微博服务,微博服务 # 微博服务
+  - RULE-SET,微信服务,微信服务 # 微信服务
   - RULE-SET,Youtube,谷歌服务
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Telegram,电报消息
-  # - PROCESS-NAME,Telegram,REJECT-DROP # For Telegram macOS
+  - DOMAIN,ghfast.top,DIRECT # 订阅更新
+  - RULE-SET,Emby X,Emby # Emby X
   - RULE-SET,Emby,Emby # Emby
-  - RULE-SET,ProxyGFW,国外网站
-  - RULE-SET,AppleProxy,国外网站
-  - RULE-SET,Apple,DIRECT
+  # - PROCESS-NAME,Telegram,REJECT-DROP # For Telegram macOS
   - RULE-SET,Lan,DIRECT
+  - RULE-SET,Reject,REJECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底策略
 proxy-providers: {添加订阅: {benchmark-timeout: 5, benchmark-url: 'http://1.1.1.1/generate_204', interval: 86400, url: ""}}
