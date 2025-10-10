@@ -1,5 +1,5 @@
 #自用配置
-#更新时间：2025.10.09
+#更新时间：2025.10.10
 #Author：K
 mode: rule
 log-level: info
@@ -195,4 +195,4 @@ rules:
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底策略
-proxy-providers: {}
+proxy-providers: {添加订阅: {benchmark-timeout: 5, benchmark-url: 'http://1.1.1.1/generate_204', interval: 86400, url: ""}}
