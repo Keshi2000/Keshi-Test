@@ -226,11 +226,6 @@ rule-providers:
     format: text
     interval: 86400
     url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/iCloud.list
-  ProxyGFW:
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/ProxyGFW.list
   Emby X:
     behavior: classical
     format: text
@@ -238,7 +233,6 @@ rule-providers:
     url: https://github.com/Repcz/Tool/raw/refs/heads/X/Stash/Rules/Emby.list
 rules:
   - DOMAIN,cdn.lilyemby.my,大陆服务 # Lily
-  - RULE-SET,ProxyGFW,国外网站 # GFW
   - RULE-SET,腾讯服务,微信服务 # 腾讯
   - RULE-SET,iCloud,苹果服务 # iCloud
   - RULE-SET,苹果Test,苹果服务 # Testflight
@@ -270,4 +264,4 @@ rules:
   - RULE-SET,Reject,REJECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底策略
-proxy-providers: {添加订阅: {benchmark-timeout: 5, benchmark-url: 'http://1.1.1.1/generate_204', interval: 86400, url: ""}}
+proxy-providers: {添加订阅: {benchmark-timeout: 5, benchmark-url: 'http://1.1.1.1/generate_204', interval: 86400, url: "https://sufo.xueshan.shop/api/xueshan/4fefb69ed39bda64a81cda9dda6e7339"}}
