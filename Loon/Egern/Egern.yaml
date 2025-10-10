@@ -20,7 +20,7 @@ dns:
       value: SecureDNS
   public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
-- auto_test:
+- select:
     name: 兜底策略
     policies:
     - 香港节点
@@ -35,13 +35,13 @@ policy_groups:
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Loon.png
     hidden: false
 - external:
-    name: 手动选择
+    name: 查看节点
     type: select
     urls:
     - 此处添加订阅
     filter: ^
     update_interval: 28800
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/shin-chan/Shin-chan-1015.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
     hidden: false
 - select:
     name: Emby
@@ -200,7 +200,7 @@ policy_groups:
 - auto_test:
     name: 香港节点
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: 香港|港|HK|🇭🇰|(?i)Hong
     interval: 1800
@@ -211,7 +211,7 @@ policy_groups:
 - auto_test:
     name: 台湾节点
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: 台湾|台|TW|🇼🇸|(?i)Taiwan
     interval: 1800
@@ -222,7 +222,7 @@ policy_groups:
 - auto_test:
     name: 日本节点
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: 日本|日|JP|🇯🇵|(?i)Japan
     interval: 1800
@@ -233,7 +233,7 @@ policy_groups:
 - auto_test:
     name: 韩国节点
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: 韩国|韩|KR|🇰🇷|(?i)Korea
     interval: 1800
@@ -244,7 +244,7 @@ policy_groups:
 - auto_test:
     name: 狮城节点
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: 新加坡|狮|SG|🇸🇬|(?i)Singapore
     interval: 1800
@@ -255,7 +255,7 @@ policy_groups:
 - auto_test:
     name: 德国节点
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: 德国|德|GE|🇩🇪|(?i)Germany
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
@@ -263,7 +263,7 @@ policy_groups:
 - select:
     name: 美国节点
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: 美国|美|US|🇺🇸|(?i)States
     icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/US.png
@@ -271,7 +271,7 @@ policy_groups:
 - select:
     name: 全球加速
     policies:
-    - 手动选择
+    - 查看节点
     - 自动选择
     - DIRECT
     - 香港节点
@@ -286,7 +286,7 @@ policy_groups:
 - auto_test:
     name: 自动选择
     policies:
-    - 手动选择
+    - 查看节点
     flatten: true
     filter: ^
     interval: 1800
@@ -295,6 +295,16 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
     hidden: true
 rules:
+- domain:
+    name: peach
+    match: embymv.link
+    policy: Emby
+    disabled: false
+- domain:
+    name: misty
+    match: misty.cx
+    policy: Emby
+    disabled: false
 - rule_set:
     name: 谷歌服务
     match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/GoogleCN.yaml
