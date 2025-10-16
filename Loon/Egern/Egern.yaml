@@ -1,3 +1,4 @@
+#更新了图标
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -32,7 +33,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Loon.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Quantumult_X.png
     hidden: false
 - external:
     name: 查看节点
@@ -55,7 +56,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+    icon: https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Embys.png
     hidden: false
 - select:
     name: 大陆服务
@@ -83,7 +84,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Telegram_02.png
     hidden: false
 - select:
     name: 微信服务
@@ -125,7 +126,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_1.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TikTok_01.png
     hidden: false
 - select:
     name: 海外抖音
@@ -139,7 +140,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Tiktok_10.png
     hidden: false
 - select:
     name: 人工智能
@@ -181,7 +182,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     hidden: false
 - select:
     name: 油管视频
@@ -195,7 +196,21 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/youtube.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    hidden: false
+- auto_test:
+    name: Epic
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 德国节点
+    - 美国节点
+    - DIRECT
+    flatten: false
+    icon: https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Ntrrr.png
     hidden: false
 - auto_test:
     name: 香港节点
@@ -206,7 +221,7 @@ policy_groups:
     interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/Hongkong.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     hidden: false
 - auto_test:
     name: 台湾节点
@@ -228,7 +243,7 @@ policy_groups:
     interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/Japan.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     hidden: false
 - auto_test:
     name: 韩国节点
@@ -239,7 +254,7 @@ policy_groups:
     interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/KR.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
     hidden: false
 - auto_test:
     name: 狮城节点
@@ -250,7 +265,7 @@ policy_groups:
     interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/singapore(1).png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     hidden: false
 - auto_test:
     name: 德国节点
@@ -260,13 +275,13 @@ policy_groups:
     filter: 德国|德|GE|🇩🇪|(?i)Germany
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
     hidden: false
-- select:
+- auto_test:
     name: 美国节点
     policies:
     - 查看节点
     flatten: true
     filter: 美国|美|US|🇺🇸|(?i)States
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/US.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png
     hidden: false
 - select:
     name: 全球加速
@@ -295,6 +310,36 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
     hidden: true
 rules:
+- rule_set:
+    name: Epic
+    match: https://github.com/Repcz/Tool/raw/refs/heads/X/Egern/Rules/Epic.yaml
+    policy: Epic
+    disabled: false
+- domain_suffix:
+    name: 雪山
+    match: xueshan.shop
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    name: Vercel
+    match: vercel.app
+    policy: 电报消息
+    disabled: false
+- rule_set:
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/GitHub.yaml
+    policy: 电报消息
+    disabled: false
+- ip_cidr:
+    name: 夏时
+    match: 146.190.157.232/32
+    policy: 大陆服务
+    no_resolve: false
+    disabled: false
+- domain_suffix:
+    name: 人工智能
+    match: googleapis.com
+    policy: 人工智能
+    disabled: false
 - domain:
     name: peach
     match: embymv.link
