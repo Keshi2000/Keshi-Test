@@ -1,4 +1,3 @@
-#更新了图标
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -84,7 +83,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Telegram_02.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     hidden: false
 - select:
     name: 微信服务
@@ -282,6 +281,14 @@ policy_groups:
     flatten: true
     filter: 美国|美|US|🇺🇸|(?i)States
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png
+    hidden: false
+- auto_test:
+    name: 其他节点
+    policies: []
+    flatten: true
+    filter: ^(?!.*(?:US|TW|JP|SG|美|韩|日本|新|港|澳|台|英|🇬🇧|🇺🇸|🇲🇴|🇸🇬|🇯🇵|🇭🇰|🇰🇷)).*$
+    interval: 600
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/France.png
     hidden: false
 - select:
     name: 全球加速
