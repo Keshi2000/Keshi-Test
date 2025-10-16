@@ -284,7 +284,8 @@ policy_groups:
     hidden: false
 - auto_test:
     name: 其他节点
-    policies: []
+    policies:
+    - 查看节点
     flatten: true
     filter: ^(?!.*(?:US|TW|JP|SG|美|韩|日本|新|港|澳|台|英|🇬🇧|🇺🇸|🇲🇴|🇸🇬|🇯🇵|🇭🇰|🇰🇷)).*$
     interval: 600
