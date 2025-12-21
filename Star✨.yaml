@@ -19,12 +19,20 @@ proxies:
     port: 9640
     server: 146.190.157.232
     type: ss
+
   - name: 香港
     password:   375dc058468847c9986c1474be03e83d
     port: 3387
     server: 59.37.139.218
     skip-cert-verify: true
     type: trojan
+
+    -name: 干杯丨香港专线-电信-4
+  - skip-cert-verify: true
+    type: trojan
+    password: 375dc058468847c9986c1474be03e83d
+    server: 120.232.159.58
+    port: 3387
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
