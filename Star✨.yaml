@@ -19,7 +19,7 @@ proxies:
     port: 9640
     server: 146.190.157.232
     type: ss
-  - name: 香港.X
+  - name: 香港·X
     password:   375dc058468847c9986c1474be03e83d
     port: 3387
     server: 59.37.139.218
