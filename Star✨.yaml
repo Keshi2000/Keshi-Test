@@ -20,13 +20,13 @@ proxies:
     server: 146.190.157.232
     type: ss
   - name: 香港·X
-    password:   aa0eaee5fe3d49149e2355b43c86b347
+    password:   b98b1b8c288f460fb297a9ae2e624e6b
     port: 3387
     server: 59.37.139.218
     skip-cert-verify: true
     type: trojan
   - name: 香港·西九龙
-    password: aa0eaee5fe3d49149e2355b43c86b347
+    password: b98b1b8c288f460fb297a9ae2e624e6b
     port: 3387
     server: 59.37.173.52
     skip-cert-verify: true
