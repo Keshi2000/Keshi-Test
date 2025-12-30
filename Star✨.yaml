@@ -19,10 +19,10 @@ proxies:
     port: 34543
     server: 146.190.157.232
     type: ss
-  - name: 香港·新界
+  - name: 韩国·首尔
     password:   0bd652b7ee1047dba8c10875071c65cb
-    port: 3387
-    server: 59.37.139.218
+    port: 443
+    server: 211.55.157.178
     skip-cert-verify: true
     type: trojan
   - name: 香港·西九龙
