@@ -38,7 +38,11 @@ policy_groups:
     name: 查看节点
     type: select
     urls:
+    - https://substore.sntp.cc/sub?target=surge&ver=4&url=https%3A%2F%2Fraw.githubusercontent.com%2FKeshi2000%2FKeshi-Test%2Frefs%2Fheads%2Fmain%2FStar%25E2%259C%25A8.yaml&insert=false
+    - https://xueshan.xueshan168.top/api/xueshan168/0da83e043f045d28f99dc7552194b06e
     - 此处添加订阅
+    urls_disabled:
+    - https://xueshan.xueshan168.top/api/xueshan168/0da83e043f045d28f99dc7552194b06e
     filter: ^
     update_interval: 28800
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
@@ -328,6 +332,11 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
     hidden: true
 rules:
+- rule_set:
+    name: Facebook
+    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Facebook.yaml
+    policy: Instagram
+    disabled: false
 - rule_set:
     name: Instagram
     match: https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Loon/Egern/Instagram.yaml
