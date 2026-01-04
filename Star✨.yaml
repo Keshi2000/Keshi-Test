@@ -1,3 +1,4 @@
+#SUBSCRIBED https://ghfast.top/https://raw.githubusercontent.com/Keshi2000/Keshi-Test/main/Star%E2%9C%A8.yaml
 #SUBSCRIBED https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Star%E2%9C%A8.yaml
 #自用配置
 #更新时间：2025.10.10
@@ -20,7 +21,7 @@ proxies:
     server: 146.190.157.232
     type: ss
   - name: 香港·维他
-    password:  5a25b68a84794e368dc3e81767c575a7
+    password: 5a25b68a84794e368dc3e81767c575a7
     port: 3387
     server: 59.37.139.218
     skip-cert-verify: true
@@ -31,7 +32,6 @@ proxies:
     server: 59.37.173.52
     skip-cert-verify: true
     type: trojan
-  
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
@@ -147,7 +147,7 @@ rule-providers:
   # AI平台
   AI: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/AI.list'}
   # Emby
-  Emby: {behavior: classical, format: yaml, interval: 86400, url: 'https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Loon/Ruleset/One/Stash%20Ey.yaml'}
+  Emby: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/emby/stash.yaml'}
   HBO: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/HBO.list'}
   TikTok: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/TikTok.list'}
   AD:
