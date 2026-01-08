@@ -32,7 +32,7 @@ proxies:
     server: 59.37.173.52
     skip-cert-verify: true
     type: trojan
- - cipher: chacha20-ietf
+  - cipher: chacha20-ietf
     name: 香港 月兔专线
     obfs: http_simple
     obfs-param: microsoft.com
