@@ -32,6 +32,16 @@ proxies:
     server: 59.37.173.52
     skip-cert-verify: true
     type: trojan
+ - cipher: chacha20-ietf
+    name: 香港 月兔专线
+    obfs: http_simple
+    obfs-param: microsoft.com
+    password: y4yUOeJRouiNvZHC
+    port: 41222
+    protocol: auth_aes128_sha1
+    protocol-param: 1181790:UgfbaB5KMsxjsvZB
+    server: 3894019.yuetujsq22.cc
+    type: ssr
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
