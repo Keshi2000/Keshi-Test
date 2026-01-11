@@ -20,7 +20,7 @@ proxies:
     port: 25295
     server: 146.190.157.232
     type: ss
-  - name: 香港节点暂时清退
+  - name: 香港节·专线
     password: a00d5edbfa644b4e8ebecb1d3e5d31f4
     port: 3387
     server: 59.37.139.218
