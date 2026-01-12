@@ -23,9 +23,16 @@ proxies:
   - name: 香港·专线
     password: 974638bb3bb74df8b842772166ff589a
     port: 3387
+    server: 120.232.159.57
+    skip-cert-verify: true
+    type: trojan
+  - name: 香港·港深专线
+    password: 974638bb3bb74df8b842772166ff589a
+    port: 3387
     server: 120.232.159.58
     skip-cert-verify: true
     type: trojan
+
 
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
