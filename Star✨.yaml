@@ -23,7 +23,7 @@ proxies:
   - name: 香港·专线
     password: 974638bb3bb74df8b842772166ff589a
     port: 3387
-    server: 120.232.159.57
+    server: 120.232.159.58
     skip-cert-verify: true
     type: trojan
 
