@@ -19,7 +19,6 @@ proxies:
     password: "00784352"
     port: 56719
     server: 146.190.157.232
-    udp：true
     type: ss
   - name: 香港·港深专线
     password: 974638bb3bb74df8b842772166ff589a
