@@ -16,29 +16,11 @@ subscribe-url: null
 proxies:
   - cipher: aes-256-gcm
     name: 美国·心之城
-    password: "00784352"
-    port: 56719
+    password: "89648613"
+    port: 51895
     server: 146.190.157.232
     type: ss
-  - name: 台湾
-    password: 974638bb3bb74df8b842772166ff589a
-    port: 443
-    server: 1.168.170.208
-    skip-cert-verify: true
-    type: trojan
-  - name: 台湾X
-    password: 974638bb3bb74df8b842772166ff589a
-    port: 443
-    server: 220.130.58.79
-    skip-cert-verify: true
-    type: trojan
-  - name: 台湾2.0
-    password: 974638bb3bb74df8b842772166ff589a
-    port: 443
-    server: 85.237.207.195
-    skip-cert-verify: true
-    type: trojan
-
+  
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
