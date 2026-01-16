@@ -26,6 +26,12 @@ proxies:
     server: 59.37.139.221
     skip-cert-verify: true
     type: trojan
+  - name: 台湾
+    password: 914717f79ed749329631a6c95b8c0a18
+    port: 443
+    server: 220.130.58.79
+    skip-cert-verify: true
+    type: trojan
 
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
