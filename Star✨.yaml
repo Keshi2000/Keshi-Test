@@ -21,13 +21,13 @@ proxies:
     server: 146.190.157.232
     type: ss
   - name: 香港
-    password: ad4cfbd2798346dbae55fac834b49802
+    password: ba140e6e28c14b57873c81809eadf588
     port: 6377
     server: 59.37.139.221
     skip-cert-verify: true
     type: trojan
   - name: 台湾
-    password: ad4cfbd2798346dbae55fac834b49802
+    password: ba140e6e28c14b57873c81809eadf588
     port: 443
     server: 220.130.58.79
     skip-cert-verify: true
