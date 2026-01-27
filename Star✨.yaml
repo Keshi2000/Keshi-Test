@@ -21,19 +21,19 @@ proxies:
     server: 146.190.157.232
     type: ss
   - name: 香港电信专线
-    password: f68344c16d824bcca8952245b5168082
+    password: cea6e283f7dc4bea974030d84adb88df
     port: 6377
     server: 59.37.139.221
     skip-cert-verify: true
     type: trojan
   - name: 香港三网专线
-    password: f68344c16d824bcca8952245b5168082
+    password: cea6e283f7dc4bea974030d84adb88df
     port: 6377
     server: 103.248.153.178
     skip-cert-verify: true
     type: trojan
   - name: 台湾
-    password: f68344c16d824bcca8952245b5168082
+    password: cea6e283f7dc4bea974030d84adb88df
     port: 443
     server: 220.130.58.79
     skip-cert-verify: true
