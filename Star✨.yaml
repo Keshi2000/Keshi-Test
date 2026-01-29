@@ -20,13 +20,25 @@ proxies:
     port: 27821
     server: 146.190.157.232
     type: ss
-  - name: 香港电信专线
+  - name: 香港·电信入口
     password: cea6e283f7dc4bea974030d84adb88df
     port: 6377
     server: 59.37.139.221
     skip-cert-verify: true
     type: trojan
-  - name: 香港三网专线
+  - name: 香港·联通入口
+    password: cea6e283f7dc4bea974030d84adb88df
+    port: 6377
+    server: 58.254.183.228
+    skip-cert-verify: true
+    type: trojan
+  - name: 香港·移动入口
+    password: cea6e283f7dc4bea974030d84adb88df
+    port: 6377
+    server: 120.232.170.216
+    skip-cert-verify: true
+    type: trojan
+  - name: 香港·三网入口
     password: cea6e283f7dc4bea974030d84adb88df
     port: 6377
     server: 103.248.153.178
