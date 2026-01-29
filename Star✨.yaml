@@ -50,7 +50,12 @@ proxies:
     server: 220.130.75.219
     skip-cert-verify: true
     type: trojan
-
+  - name: 韩国
+    password: cea6e283f7dc4bea974030d84adb88df
+    port: 443
+    server: 221.155.202.15
+    skip-cert-verify: true
+    type: trojan
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
