@@ -26,13 +26,7 @@ proxies:
     server: 103.248.153.166
     skip-cert-verify: true
     type: trojan
-  - name: 香港·专线
-    password: e596cb8f3ccc450b9101bb7ac02bd451
-    port: 6377
-    server: 59.37.139.216
-    skip-cert-verify: true
-    type: trojan
-  - name: 香港🇭🇰
+  - name: 香港
     password: e596cb8f3ccc450b9101bb7ac02bd451
     port: 6377
     server: i1.tjone.cn
