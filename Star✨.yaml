@@ -21,19 +21,25 @@ proxies:
     server: 146.190.157.232
     type: ss
   - name: 香港·三网入口
-    password: e596cb8f3ccc450b9101bb7ac02bd451
+    password: ef1ce34f783f4d0a952380f0f187d926
     port: 6377
     server: 103.248.153.166
     skip-cert-verify: true
     type: trojan
+  - name: 香港·电信入口
+    password: ef1ce34f783f4d0a952380f0f187d926
+    port: 6377
+    server: 59.37.139.216
+    skip-cert-verify: true
+    type: trojan
   - name: 香港
-    password: e596cb8f3ccc450b9101bb7ac02bd451
+    password: ef1ce34f783f4d0a952380f0f187d926
     port: 6377
     server: i1.tjone.cn
     skip-cert-verify: true
     type: trojan
   - name: 台湾
-    password: e596cb8f3ccc450b9101bb7ac02bd451
+    password: ef1ce34f783f4d0a952380f0f187d926
     port: 443
     server: 220.130.75.219
     skip-cert-verify: true
