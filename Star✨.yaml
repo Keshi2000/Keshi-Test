@@ -16,42 +16,30 @@ subscribe-url: null
 proxies:
   - cipher: aes-256-gcm
     name: 美国·心之城
-    password: "95091442"
-    port: 27821
+    password: "27500276"
+    port: 36585
     server: 146.190.157.232
     type: ss
-  - name: 香港·电信入口
-    password: f2c6d567533d4a10b3351045e0d68638
-    port: 6377
-    server: 59.37.139.221
-    skip-cert-verify: true
-    type: trojan
-  - name: 香港·联通入口
-    password: f2c6d567533d4a10b3351045e0d68638
-    port: 6377
-    server: 58.254.183.228
-    skip-cert-verify: true
-    type: trojan
-  - name: 香港·移动入口
-    password: f2c6d567533d4a10b3351045e0d68638
-    port: 6377
-    server: 120.232.170.216
-    skip-cert-verify: true
-    type: trojan
   - name: 香港·三网入口
-    password: f2c6d567533d4a10b3351045e0d68638
+    password: e596cb8f3ccc450b9101bb7ac02bd451
     port: 6377
-    server: 103.248.153.178
+    server: 103.248.153.166
+    skip-cert-verify: true
+    type: trojan
+  - name: 香港
+    password: e596cb8f3ccc450b9101bb7ac02bd451
+    port: 6377
+    server: i1.tjone.cn
     skip-cert-verify: true
     type: trojan
   - name: 台湾
-    password: f2c6d567533d4a10b3351045e0d68638
+    password: e596cb8f3ccc450b9101bb7ac02bd451
     port: 443
     server: 220.130.75.219
     skip-cert-verify: true
     type: trojan
   - name: 韩国
-    password: f2c6d567533d4a10b3351045e0d68638
+    password: ef1ce34f783f4d0a952380f0f187d926
     port: 443
     server: 221.155.202.15
     skip-cert-verify: true
