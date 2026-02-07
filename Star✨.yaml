@@ -29,7 +29,7 @@ proxies:
   - name: 台湾
     password: 3165d73f1c1a493b9a934336ebda0217
     port: 443
-    server: 220.130.75.219
+    server: 1.170.228.79
     skip-cert-verify: true
     type: trojan
 proxy-groups:
