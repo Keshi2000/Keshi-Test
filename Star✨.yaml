@@ -1,6 +1,6 @@
 #SUBSCRIBED https://ghfast.top/https://raw.githubusercontent.com/Keshi2000/Keshi-Test/main/Star%E2%9C%A8.yaml
 #SUBSCRIBED https://github.com/Keshi2000/Keshi-Test/raw/refs/heads/main/Star%E2%9C%A8.yaml
-#自用配置
+#自用配置，仅限自用
 #更新时间：2025.10.10
 #Author：K
 mode: rule
@@ -16,53 +16,22 @@ subscribe-url: null
 proxies:
   - cipher: aes-256-gcm
     name: 美国·心之城
-    password: "82711400"
-    port: 28336
+    password: "15752032"
+    port: 58199
     server: 146.190.157.232
     type: ss
-  - name: 香港·三网入口
-    password: 62f252e831b14db39f4a81f9b43e7a15
+  - name: 香港
+    password: 3165d73f1c1a493b9a934336ebda0217
     port: 6377
     server: 103.248.153.166
     skip-cert-verify: true
     type: trojan
-  - name: 香港·电信入口
-    password: 62f252e831b14db39f4a81f9b43e7a15
-    port: 6377
-    server: 59.37.139.216
-    skip-cert-verify: true
-    type: trojan
-  - name: 香港
-    password: 62f252e831b14db39f4a81f9b43e7a15
-    port: 6377
-    server: i1.tjone.cn
-    skip-cert-verify: true
-    type: trojan
   - name: 台湾
-    password: 62f252e831b14db39f4a81f9b43e7a15
+    password: 3165d73f1c1a493b9a934336ebda0217
     port: 443
     server: 220.130.75.219
     skip-cert-verify: true
     type: trojan
-  - name: 台湾·2
-    password: 62f252e831b14db39f4a81f9b43e7a15
-    port: 443
-    server: 1.170.228.79
-    skip-cert-verify: true
-    type: trojan
-  - name: 韩国
-    password: 62f252e831b14db39f4a81f9b43e7a15
-    port: 443
-    server: 221.155.202.15
-    skip-cert-verify: true
-    type: trojan
-  - name: 新加坡
-    password: 62f252e831b14db39f4a81f9b43e7a15
-    port: 443
-    server: 149.28.151.140
-    skip-cert-verify: true
-    type: trojan
-
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
