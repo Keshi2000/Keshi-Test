@@ -1,0 +1,12 @@
+#!name = 流量数据重写
+#!desc = 修改接口返回的已用流量、总流量及过期时间。
+#!author = Gemini
+#!icon = https://raw.githubusercontent.com/LoonProject/LoonProject/master/IconSet/Color/Speedtest.png
+#!date = 2026-02-10
+
+[Script]
+# 拦截流量查询接口并执行逻辑修改
+http-response ^https?:\/\/api\.lgjf\.top(:\d+)?\/app\/customer\/slgetUserInfogo script-path=https://raw.githubusercontent.com/yjk930/Loon/main/scripts/lgjf_hack.js, requires-body=true, tag=流量绕过
+
+[MITM]
+hostname = api.lgjf.top
