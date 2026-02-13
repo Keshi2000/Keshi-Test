@@ -1,5 +1,5 @@
 payload:
-  - DOMAIN-SUFFIX,95599.cn
+  - DOMAIN-SUFFIX, 95599.cn
   - DOMAIN-SUFFIX, nebula-media.org
   - DOMAIN-SUFFIX, feiniu.lol
   - DOMAIN-SUFFIX, meowfly.de
@@ -40,6 +40,7 @@ payload:
   - DOMAIN-SUFFIX, ichinosekotomi.com
   - DOMAIN-SUFFIX, miraiemby.com
   - DOMAIN-SUFFIX, wedg.top
+  - DOMAIN-SUFFIX, lyezi.cc
 
  
   
