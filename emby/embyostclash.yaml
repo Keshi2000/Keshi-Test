@@ -1,5 +1,6 @@
-payload:
-  - DOMAIN-SUFFIX, 28.al
-  - DOMAIN-SUFFIX, vban.xyz
-  - DOMAIN-SUFFIX, webn.cc
-  - DOMAIN-SUFFIX, eu.org
+
+domain_suffix_set:
+  - 28.al
+  - vban.xyz
+  - webn.cc
+  - eu.org
