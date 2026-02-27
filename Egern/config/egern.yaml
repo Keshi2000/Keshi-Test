@@ -480,7 +480,7 @@ rules:
     disabled: false
 - rule_set:
     name: 假日飞行家
-    match: https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/emby/embyostclash.yaml
+    match: https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/emby/embyostegern.yaml
     policy: 假日飞行家
     disabled: false
 - rule_set:
