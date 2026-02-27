@@ -197,6 +197,20 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     hidden: false
+
+- select:
+    name: 假日飞行家
+    policies:
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    - 其他节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Oceania_Map.png
+    hidden: false
 - select:
     name: Epic
     policies:
@@ -463,6 +477,11 @@ rules:
     match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Advertising.yaml
     policy: REJECT
     update_interval: 86400
+    disabled: false
+- rule_set:
+    name: 假日飞行家
+    match: https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/emby/embyostclash.yaml
+    policy: 假日飞行家
     disabled: false
 - rule_set:
     name: Telegram
