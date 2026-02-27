@@ -181,7 +181,7 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Drive.png
     hidden: false
 - select:
     name: 油管视频
