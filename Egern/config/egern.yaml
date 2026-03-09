@@ -1,3 +1,4 @@
+# 3.9 更新  精简配置
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -15,7 +16,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   forward:
-  - wildcard:
+  - domain_wildcard:
       match: '*'
       value: SecureDNS
   public_ip_lookup_url: https://ifconfig.me/ip
@@ -28,7 +29,6 @@ policy_groups:
     - 日本节点
     - 韩国节点
     - 狮城节点
-    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
@@ -51,95 +51,31 @@ policy_groups:
     - 日本节点
     - 韩国节点
     - 狮城节点
-    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Embys.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
     hidden: false
 - select:
     name: 大陆服务
     policies:
     - 香港节点
     - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
     - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/CN_02.png
     hidden: false
 - select:
-    name: 电报消息
+    name: 国外服务
     policies:
     - 香港节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
-    - 德国节点
     - 美国节点
-    - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-    hidden: false
-- select:
-    name: 微信服务
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
-    hidden: false
-- select:
-    name: 微博服务
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png
-    hidden: false
-- select:
-    name: 大陆抖音
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_1.png
-    hidden: false
-- select:
-    name: 海外抖音
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
     hidden: false
 - select:
     name: 人工智能
@@ -149,7 +85,6 @@ policy_groups:
     - 日本节点
     - 韩国节点
     - 狮城节点
-    - 德国节点
     - 美国节点
     - DIRECT
     flatten: false
@@ -160,44 +95,10 @@ policy_groups:
     policies:
     - 香港节点
     - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
     - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Apple_GameCenter.png
     hidden: false
-- select:
-    name: 谷歌服务
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Drive.png
-    hidden: false
-- select:
-    name: 油管视频
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
-    hidden: false
-
 - select:
     name: 假日飞行家
     policies:
@@ -210,33 +111,6 @@ policy_groups:
     - 其他节点
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Oceania_Map.png
-    hidden: false
-- select:
-    name: Epic
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    - DIRECT
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PlayStation_1.png
-    hidden: false
-- select:
-    name: Instagram
-    policies:
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 德国节点
-    - 美国节点
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png
     hidden: false
 - auto_test:
     name: 香港节点
@@ -290,14 +164,6 @@ policy_groups:
     timeout: 5
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     hidden: false
-- auto_test:
-    name: 德国节点
-    policies:
-    - 查看节点
-    flatten: true
-    filter: 德国|De|GE|🇩🇪|(?i)Germany
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
-    hidden: false
 - select:
     name: 美国节点
     policies:
@@ -313,128 +179,18 @@ policy_groups:
     flatten: true
     filter: ^(?!.*(?:US|TW|JP|SG|美|韩|日本|新|港|澳|台|英|🇬🇧|🇺🇸|🇲🇴|🇸🇬|🇯🇵|🇭🇰|🇰🇷)).*$
     interval: 600
-    icon: https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SO.png
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png
     hidden: false
-- select:
-    name: 全球加速
-    policies:
-    - 查看节点
-    - 自动选择
-    - DIRECT
-    - 香港节点
-    - 台湾节点
-    - 日本节点
-    - 韩国节点
-    - 狮城节点
-    - 美国节点
-    flatten: false
-    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Global.png
-    hidden: true
-- auto_test:
-    name: 自动选择
-    policies:
-    - 查看节点
-    flatten: true
-    filter: ^
-    interval: 1800
-    tolerance: 50
-    timeout: 5
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
-    hidden: true
 rules:
-- rule_set:
-    name: Facebook
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Facebook.yaml
-    policy: Instagram
-    disabled: false
-- rule_set:
-    name: Instagram
-    match: https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/Egern/rules/Instagram.yaml
-    policy: Instagram
-    disabled: false
 - domain_suffix:
     name: Tmdb
     match: tmdb.org
     policy: Emby
     disabled: false
 - rule_set:
-    name: 大陆抖音
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/DouYin.yaml
-    policy: 大陆抖音
-    disabled: false
-- rule_set:
-    name: Epic
-    match: https://github.com/Repcz/Tool/raw/refs/heads/X/Egern/Rules/Epic.yaml
-    policy: Epic
-    disabled: false
-- domain_suffix:
-    name: Vercel
-    match: vercel.app
-    policy: 电报消息
-    disabled: false
-- rule_set:
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/GitHub.yaml
-    policy: 电报消息
-    disabled: false
-- domain_suffix:
     name: 人工智能
-    match: googleapis.com
+    match: https://ddgksf2013.top/filter/Ai.yaml
     policy: 人工智能
-    disabled: false
-- rule_set:
-    name: 谷歌服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/GoogleCN.yaml
-    policy: 谷歌服务
-    disabled: false
-- rule_set:
-    name: 谷歌服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Google.yaml
-    policy: 谷歌服务
-    disabled: false
-- rule_set:
-    name: 微博服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/WeiBo.yaml
-    policy: 微博服务
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaMedia.yaml
-    policy: 大陆服务
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaMax.yaml
-    policy: 大陆服务
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPv6.yaml
-    policy: 大陆服务
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPv4.yaml
-    policy: 大陆服务
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPMax.yaml
-    policy: 大陆服务
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaIPBGP.yaml
-    policy: 大陆服务
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/ChinaASN.yaml
-    policy: 大陆服务
-    disabled: false
-- domain_suffix:
-    name: Gemini
-    match: googleapis.com
-    policy: 谷歌服务
     disabled: false
 - domain:
     name: Lily直连
@@ -447,35 +203,9 @@ rules:
     policy: Emby
     disabled: false
 - rule_set:
-    name: AI
-    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/OpenAI.yaml
-    policy: 人工智能
-    disabled: false
-- rule_set:
-    name: TikTok
-    match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/TikTok.yaml
-    policy: 海外抖音
-    disabled: false
-- rule_set:
-    name: Wechat
-    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/WeChat.yaml
-    policy: 微信服务
-    disabled: false
-- rule_set:
-    name: YouTube
-    match: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Rule/YouTube.yaml
-    policy: 油管视频
-    disabled: false
-- rule_set:
     name: 规则修正
     match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Unbreak.yaml
     policy: DIRECT
-    update_interval: 86400
-    disabled: false
-- rule_set:
-    name: 广告拦截
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Advertising.yaml
-    policy: REJECT
     update_interval: 86400
     disabled: false
 - rule_set:
@@ -484,15 +214,9 @@ rules:
     policy: 假日飞行家
     disabled: false
 - rule_set:
-    name: Telegram
-    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Telegram.yaml
-    policy: 电报消息
-    update_interval: 86400
-    disabled: false
-- rule_set:
-    name: 全球加速
+    name: 国外网站
     match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Global.yaml
-    policy: 全球加速
+    policy: 国外服务
     update_interval: 86400
     disabled: false
 - rule_set:
@@ -508,22 +232,23 @@ rules:
     update_interval: 86400
     disabled: false
 - rule_set:
-    name: 国内规则
+    name: 大陆服务
     match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/GEOIPCN.yaml
-    policy: DIRECT
+    policy: 大陆服务
     update_interval: 86400
     disabled: false
 - default:
     name: 兜底策略
     policy: 兜底策略
 mitm:
-  enabled: true
   ca_p12: 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
   ca_passphrase: egern
   hostnames:
     excludes:
     - buy.itunes.apple.com
 modules:
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Sub-Store.official.sgmodule
+  enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
