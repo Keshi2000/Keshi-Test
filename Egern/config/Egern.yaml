@@ -189,7 +189,7 @@ rules:
     disabled: false
 - rule_set:
     name: 人工智能
-    match: https://ddgksf2013.top/filter/Ai.yaml
+    match: https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/Egern/rules/AI.list
     policy: 人工智能
     disabled: false
 - domain:
