@@ -1,4 +1,6 @@
-# 4.22更新
+# 4.22 更新
+# author：K
+# 自用配置
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -40,6 +42,7 @@ policy_groups:
     urls:
     - 此处添加订阅
     urls_disabled:
+    - https://keshixxx.cc.cd/sub?id=5byg07tiyoct
     filter: ^
     update_interval: 86400
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
