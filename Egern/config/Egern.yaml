@@ -40,9 +40,8 @@ policy_groups:
     name: 查看节点
     type: select
     urls:
-    - 此处添加订阅
-    urls_disabled:
-    - https://keshixxx.cc.cd/sub?id=5byg07tiyoct
+
+     - 此处添加订阅
     filter: ^
     update_interval: 86400
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
@@ -210,6 +209,20 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png
     hidden: false
 rules:
+- domain:
+    name: We
+    match: a.wedg.top
+    policy: DIRECT
+    disabled: false
+- domain:
+    name: 乐蛙
+    match: emby.taotu.ink
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: challenges.cloudflare.com
+    policy: 国外服务
+    disabled: false
 - rule_set:
     match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Spotify.yaml
     policy: Spotify
