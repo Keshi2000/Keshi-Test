@@ -18,6 +18,24 @@ proxies:
     port: 61199
     server: 146.190.157.232
     type: ss
+
+  - type: vless
+    name: "香港专线-BGP-1"
+    server: 202.46.227.64
+    port: 7379
+    uuid: e333ae21ae2f480ab161cbef58e66a2d
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    reality-opts:
+      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
+      short-id: 96e03e0f184639ef
+    network: tcp
+    encryption: none
+    servername: peer.pan.baidu.com
+
 proxy-groups:
   - {name: 兜底策略, icon: 'https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png', type: select, proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]}
   - icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
