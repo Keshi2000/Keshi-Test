@@ -28,7 +28,8 @@ body = body.replace(/\\"rank_ticket\\":\d+/g, '\\"rank_ticket\\":666');
 // PVE体力
 body = body.replace(/\\"pve_power\\":\d+/g, '\\"pve_power\\":888');
 
-// 修改 ID 38（雪大王）的等级为 50
-body = body.replace(/\\(\{.*?\\"id\\":38,[^}]*?\\"level\\":)\d+/g, '$150');
+// 修改 ID 38（雪大王）的等级为 50（双向兼容顺序）
+body = body.replace(/(\\"id\\":38\s*,\s*\\"level\\":)\d+/g, '$150');
+body = body.replace(/(\\"level\\":)\d+(\s*,\s*\\"id\\":38)/g, '$150$2');
 
 $done({ body });
