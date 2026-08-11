@@ -1,0 +1,103 @@
+#3.13 精简了大量配置
+#Author：Keshi
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+#此处开始
+proxies:
+#此处结尾
+proxy-groups:
+  - name: 兜底策略
+    type: select
+    proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Stash.png
+  - name: 查看节点
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Siri.png
+  - name: Emby
+    type: select
+    proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+  - name: 大陆服务
+    type: select
+    proxies: [香港节点, 台湾节点, DIRECT]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+  - name: 国外服务
+    type: select
+    proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
+  - name: 人工智能
+    type: select
+    proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT3.png
+  - name: 苹果服务
+    type: select
+    proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, DIRECT]
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Apple_GameCenter.png
+  - name: 假日飞行家
+    type: select
+    proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 其他节点]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Oceania_Map.png
+  - name: 香港节点
+    type: url-test
+    filter: "(?i)🇭🇰|香港|((HK|Hong))"
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+  - name: 台湾节点
+    type: url-test
+    filter: "(?i)🇨🇳|🇹🇼|台湾|((TW|Tai|Taiwan))"
+    include-all: true
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/TW_01.png
+  - name: 日本节点
+    type: url-test
+    filter: "(?i)🇯🇵|日本|东京|((JP|Japan))"
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+  - name: 韩国节点
+    type: url-test
+    filter: "韩国|韩|KR|🇰🇷|(?i)Korea"
+    include-all: true
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/KR_02.png
+  - name: 狮城节点
+    type: url-test
+    filter: "(?i)🇸🇬|新加坡|狮|((SG|Singapore))"
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+  - name: 美国节点
+    type: url-test
+    filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|((US|United States))"
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+  - name: 其他节点
+    type: select
+    filter: "^(?!.*(?:US|TW|JP|SG|美|韩|日本|新|港|澳|台|英|🇬🇧|🇺🇸|🇲🇴|🇸🇬|🇯🇵|🇭🇰|🇰🇷)).*$"
+    include-all: true
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png
+rules:
+  - RULE-SET,人工智能,人工智能
+  - RULE-SET,苹果服务,苹果服务
+  - RULE-SET,国外服务,国外服务
+  - RULE-SET,大陆服务,大陆服务
+  - RULE-SET,假日飞行家,假日飞行家
+  - RULE-SET,Emby,Emby
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,Reject,REJECT
+  - GEOIP,CN,DIRECT
+  - MATCH,兜底策略
+rule-providers:
+  Lan: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/Lan.list'}
+  Reject: {behavior: classical, format: text, interval: 86400, url: 'https://github.com/Repcz/Tool/raw/X/Stash/Rules/Reject.list'}
+  Emby: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/emby/stash.yaml'}
+  人工智能: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/QX/AI.yaml'}
+  假日飞行家: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/emby/embyostclash.yaml'}
+  国外服务: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.yaml'}
+  大陆服务: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/GEOIPCN.yaml'}
+  苹果服务: {behavior: classical, format: yaml, interval: 0, url: 'https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/Apple.yaml'}
+proxy-providers:
+  订阅:
+    interval: 86400
+    url: ""
