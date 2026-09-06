@@ -1,3 +1,4 @@
+#SUBSCRIBED https://gist.githubusercontent.com/Keshi2000/1e6828fa03816d280643b4be5d624000/raw/Mihomo.yaml
 #3.13 精简了大量配置
 #Author：Keshi
 port: 7890
@@ -78,6 +79,7 @@ proxy-groups:
     include-all: true
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png
 rules:
+  - RULE-SET,秋风去广告规则,REJECT # 去广告
   - RULE-SET,人工智能,人工智能
   - RULE-SET,苹果服务,苹果服务
   - RULE-SET,国外服务,国外服务
@@ -85,7 +87,6 @@ rules:
   - RULE-SET,假日飞行家,假日飞行家
   - RULE-SET,Emby,Emby
   - RULE-SET,Lan,DIRECT
-  - RULE-SET,Reject,REJECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底策略
 rule-providers:
@@ -97,7 +98,12 @@ rule-providers:
   国外服务: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.yaml'}
   大陆服务: {behavior: classical, format: yaml, interval: 86400, url: 'https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/GEOIPCN.yaml'}
   苹果服务: {behavior: classical, format: yaml, interval: 0, url: 'https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/Apple.yaml'}
+  秋风去广告规则:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://github.boki.moe/https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
 proxy-providers:
   订阅:
     interval: 86400
-    url: ""
+    url: "此处填写订阅"
