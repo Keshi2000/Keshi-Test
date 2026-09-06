@@ -1,6 +1,6 @@
-#自用配置文件
-#更新时间:9.6
-#作者:K
+# K 
+# 2026.9.6
+
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -136,7 +136,7 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/CurlyMouse2.png
     hidden: false
-- auto_test:
+- smart:
     name: 香港节点
     policies:
     - 查看节点
@@ -174,15 +174,12 @@ policy_groups:
     timeout: 5
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     hidden: false
-- auto_test:
+- smart:
     name: 韩国节点
     policies:
     - 查看节点
     flatten: true
     filter: 韩国|韩|KR|🇰🇷|(?i)Korea
-    interval: 1800
-    tolerance: 50
-    timeout: 5
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
     hidden: false
 - auto_test:
@@ -237,7 +234,7 @@ rules:
     disabled: false
 - rule_set:
     name: 电报
-    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Telegram.yaml
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Telegram/Telegram.list
     policy: 电报服务
     disabled: false
 - domain:
@@ -269,7 +266,7 @@ rules:
     policy: 国外服务
     disabled: false
 - rule_set:
-    match: https://github.com/Keshi2000/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Spotify.yaml
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Spotify/Spotify.list
     policy: Spotify
     disabled: false
 - domain_suffix:
@@ -293,38 +290,26 @@ rules:
     policy: Emby
     disabled: false
 - rule_set:
-    name: 规则修正
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Unbreak.yaml
-    policy: DIRECT
-    update_interval: 86400
-    disabled: false
-- rule_set:
     name: 假日飞行家
     match: https://raw.githubusercontent.com/Keshi2000/Keshi-Test/refs/heads/main/emby/embyostegern.yaml
     policy: 假日飞行家
     disabled: false
 - rule_set:
     name: 国外网站
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Global.yaml
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Global/Global_All.list
     policy: 国外服务
     update_interval: 86400
     disabled: false
 - rule_set:
     name: 苹果服务
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Apple.yaml
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Apple/Apple_All.list
     policy: 苹果服务
     update_interval: 86400
     disabled: false
 - rule_set:
     name: 局域网络
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/LAN.yaml
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Lan/Lan.list
     policy: DIRECT
-    update_interval: 86400
-    disabled: false
-- rule_set:
-    name: 大陆服务
-    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/GEOIPCN.yaml
-    policy: 大陆服务
     update_interval: 86400
     disabled: false
 - default:
@@ -356,7 +341,14 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
   enabled: true
-- url: https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx
+- url: https://ddgksf2013.top/module/ScriptHub.Egern.sgmodule
+  enabled: true
+- url: http://script.hub/file/_start_/https://ddgksf2013.top/module/Redirect2Swift.sgmodule/_end_/Redirect2Swift.sgmodule?type=surge-module&n=Swiftgram%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40ddgksf2013+TG%E5%A4%96%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%ACSwiftgram&headers=User-Agent:surge&del=true&jqEnabled=true&target=surge-module&category=ddgksf2013
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Script%20Hub.official.sgmodule
+  enabled: true
+- name: 猛鬼宿舍
+  url: http://script.hub/file/_start_/https://gist.githubusercontent.com/Keshi2000/1dd4fb1ffcb12655ab1200f2b05b20dd/raw/kongbusushe.js/_end_/kongbusushe.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
   enabled: true
