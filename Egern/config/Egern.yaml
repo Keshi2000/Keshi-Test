@@ -1,6 +1,6 @@
-# 4.22 更新
-# author：K
-# 自用配置
+#自用配置文件
+#更新时间:9.6
+#作者:K
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -34,14 +34,13 @@ policy_groups:
     - 美国节点
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Quantumult_X.png
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Egern_00.png
     hidden: false
 - external:
     name: 查看节点
     type: select
     urls:
-
-     - 此处添加订阅
+    - 此处添加订阅
     filter: ^
     update_interval: 86400
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chaxun(3).png
@@ -50,6 +49,7 @@ policy_groups:
     name: Emby
     policies:
     - 香港节点
+    - 澳门节点
     - 台湾节点
     - 日本节点
     - 韩国节点
@@ -77,21 +77,26 @@ policy_groups:
     - 韩国节点
     - 狮城节点
     - 美国节点
-    - 优选节点
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
     hidden: false
 - select:
-    name: 人工智能
+    name: 电报服务
     policies:
     - 香港节点
     - 台湾节点
+    - 澳门节点
     - 日本节点
     - 韩国节点
     - 狮城节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+    hidden: false
+- select:
+    name: 人工智能
+    policies:
+    - AI线路
     - 美国节点
-    - 优选节点
-    - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
     hidden: false
@@ -121,23 +126,31 @@ policy_groups:
     name: 假日飞行家
     policies:
     - 香港节点
+    - 澳门节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
     - 美国节点
-    - 优选节点
     - 其他节点
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Oceania_Map.png
+    icon: https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/CurlyMouse2.png
     hidden: false
-- select:
+- auto_test:
     name: 香港节点
     policies:
     - 查看节点
     flatten: true
     filter: 香港|港|HK|🇭🇰|(?i)Hong
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    hidden: false
+- auto_test:
+    name: 澳门节点
+    policies:
+    - 查看节点
+    flatten: true
+    filter: 澳门
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/MO.png
     hidden: false
 - auto_test:
     name: 台湾节点
@@ -156,6 +169,9 @@ policy_groups:
     - 查看节点
     flatten: true
     filter: 日本|日|JP|🇯🇵|(?i)Japan
+    interval: 1800
+    tolerance: 50
+    timeout: 5
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     hidden: false
 - auto_test:
@@ -189,15 +205,15 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png
     hidden: false
 - auto_test:
-    name: 优选节点
+    name: AI线路
     policies:
     - 查看节点
     flatten: true
-    filter: 优选
-    interval: 1000
+    filter: 凤凰城
+    interval: 1800
     tolerance: 50
     timeout: 5
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
     hidden: false
 - auto_test:
     name: 其他节点
@@ -209,6 +225,35 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png
     hidden: false
 rules:
+- geoip:
+    name: 大陆服务
+    match: CN
+    policy: 大陆服务
+    no_resolve: false
+    disabled: false
+- domain:
+    match: keshixxx.cc.cd
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    name: 电报
+    match: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Ruleset/Telegram.yaml
+    policy: 电报服务
+    disabled: false
+- domain:
+    name: 反代
+    match: gh-proxy.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    name: 反代
+    match: keshifd.ccwu.cc
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: ctemby.v2go.cc.cd
+    policy: DIRECT
+    disabled: false
 - domain:
     name: We
     match: a.wedg.top
@@ -311,7 +356,13 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
   enabled: true
+- url: https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx
+  enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
+  enabled: true
+- url: https://kelee.one/Tool/Loon/Lpx/HUPU_remove_ads.lpx
+  enabled: true
+- url: https://raw.githubusercontent.com/DemoJameson/Loon.Plugins/main/fix_infuse_image_language/fix_infuse_image_language.plugin
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx
   enabled: true
@@ -346,6 +397,4 @@ modules:
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/12306%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%8E%BB%E5%B9%BF%E5%91%8A.official.sgmodule
-  enabled: true
-- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%92%8C%E5%BA%94%E7%94%A8%E6%87%92%E4%BA%BA%E5%8E%BB%E5%B9%BF%E5%91%8A%E5%90%88%E9%9B%86.official.sgmodule
   enabled: true
