@@ -1,6 +1,4 @@
-# K 
-# 2026.9.6
-
+# 9.16
 ipv6: false
 http_port: 8200
 socks_port: 8300
@@ -136,12 +134,14 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/CurlyMouse2.png
     hidden: false
-- smart:
+- auto_test:
     name: 香港节点
     policies:
     - 查看节点
     flatten: true
     filter: 香港|港|HK|🇭🇰|(?i)Hong
+    interval: 300
+    tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     hidden: false
 - auto_test:
@@ -150,6 +150,8 @@ policy_groups:
     - 查看节点
     flatten: true
     filter: 澳门
+    interval: 300
+    tolerance: 50
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/MO.png
     hidden: false
 - auto_test:
@@ -158,7 +160,7 @@ policy_groups:
     - 查看节点
     flatten: true
     filter: 台湾|台|TW|🇼🇸|(?i)Taiwan
-    interval: 1800
+    interval: 300
     tolerance: 50
     timeout: 5
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
@@ -169,17 +171,19 @@ policy_groups:
     - 查看节点
     flatten: true
     filter: 日本|日|JP|🇯🇵|(?i)Japan
-    interval: 1800
+    interval: 300
     tolerance: 50
     timeout: 5
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     hidden: false
-- smart:
+- auto_test:
     name: 韩国节点
     policies:
     - 查看节点
     flatten: true
     filter: 韩国|韩|KR|🇰🇷|(?i)Korea
+    interval: 300
+    tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
     hidden: false
 - auto_test:
@@ -188,17 +192,19 @@ policy_groups:
     - 查看节点
     flatten: true
     filter: 新加坡|狮|SG|🇸🇬|(?i)Singapore
-    interval: 1800
+    interval: 300
     tolerance: 50
     timeout: 5
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     hidden: false
-- select:
+- auto_test:
     name: 美国节点
     policies:
     - 查看节点
     flatten: true
     filter: 美国|美|US|🇺🇸|(?i)States
+    interval: 300
+    tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png
     hidden: false
 - auto_test:
@@ -206,7 +212,7 @@ policy_groups:
     policies:
     - 查看节点
     flatten: true
-    filter: 凤凰城
+    filter: GCP-1|City
     interval: 1800
     tolerance: 50
     timeout: 5
@@ -222,6 +228,11 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png
     hidden: false
 rules:
+- domain:
+    name: yu初
+    match: aaa.yusen6.ccwu.cc
+    policy: DIRECT
+    disabled: false
 - geoip:
     name: 大陆服务
     match: CN
@@ -255,6 +266,11 @@ rules:
     name: We
     match: a.wedg.top
     policy: DIRECT
+    disabled: false
+- domain:
+    name: 秋风广告规则
+    match: https://github.boki.moe/https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge-RULE-SET.list
+    policy: REJECT
     disabled: false
 - domain:
     name: 乐蛙
