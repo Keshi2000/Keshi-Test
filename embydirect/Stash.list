@@ -1,0 +1,15 @@
+规则数量:10
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+payload:
+  - DOMAIN-SUFFIX,huangmin.cc.cd
+  - DOMAIN-SUFFIX,cmecloud.cn
+  - DOMAIN-SUFFIX,yusen6.ccwu.cc
+  - DOMAIN-SUFFIX,nbazhibo.cc.cd
+  - DOMAIN-SUFFIX,taotu.ink
+  - DOMAIN-SUFFIX,mjji.de
+  - DOMAIN-SUFFIX,a.wedg.top
+  - DOMAIN-SUFFIX,entertang.work
+  - DOMAIN-SUFFIX,keshifd.ccwu.cc
+  - DOMAIN-SUFFIX,liuerao.dpdns.org
